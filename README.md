@@ -40,7 +40,7 @@ props 传入参数
 enent 响应事件
 
 | 事件名 | 说明 | 回调参数 | 
- :-: | :-: | :-: | :-: |
+ :-: | :-: | :-: | 
 | type | 类型，可选值为 primary info warning danger| string | 
 
 ## 基础组件
