@@ -1,2 +1,15 @@
-<!--components/tile-calendar/index.wxml-->
-<text>components/tile-calendar/index.wxml</text>
+<!-- pages/workOrder/components/dateSelector/index.wxml -->
+<view class="selector">
+  <picker mode="date" fields="month" value="{{date}}" bindchange="bindDateChange" class="picker">
+    <view class="picker-content">{{year}}年{{month}}月</view>
+    <view class="arrow"></view>
+  </picker>
+  <scroll-view scroll-x="true" class="days" scroll-into-view="{{scrollId}}">
+    <view class="item" wx:for="{{dayList}}" wx:key="index" bind:tap="changeDay" data-index="{{index}}" id="item{{index}}">
+      <view class="item-week {{item.active?'item-week-active':''}}">{{item.week}}</view>
+      <view class="item-day" style="background:{{item.active?activeColor:inactiveColor}}">
+        {{item.day}}
+      </view>
+    </view>
+  </scroll-view>
+</view>

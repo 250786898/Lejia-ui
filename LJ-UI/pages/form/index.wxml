@@ -1,0 +1,4 @@
+<!--pages/form/index.wxml-->
+<view>
+<lj-tile-calendar bind:searchByDate="searchByDate" />
+</view>

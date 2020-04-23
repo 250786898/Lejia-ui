@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "lj-tile-calendar":"/components/tile-calendar/index"
+  }
+}

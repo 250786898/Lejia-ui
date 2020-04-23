@@ -35,13 +35,14 @@ props 传入参数
 
 | 参数 | 说明 | 类型 | 默认值 |
  :-: | :-: | :-: | :-: |
-| type | 类型，可选值为 primary info warning danger| string | default |
+| activeColor | 当前选择的日期高亮颜色 | string | #D6151B |
+| inactiveColor | 当前为被选择的日期颜色 | string | #EF8A91 |
 
 enent 响应事件
 
 | 事件名 | 说明 | 回调参数 | 
  :-: | :-: | :-: | 
-| type | 类型，可选值为 primary info warning danger| string | 
+| bind:searchByDate | 点击日期，获取当前选择日期 | - | 
 
 ## 基础组件
 
